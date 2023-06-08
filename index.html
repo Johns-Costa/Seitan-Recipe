@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Seitan Recipe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>How to make basic seitan</h1>
+      <img src="/Users/joaco716/Desktop/Web development/Code institute challenge/images/0-1.jpeg" alt="A man drinking tea">
+
+      <p>A simple cruelty free juicy steak that everyone will love</p>
+
+    </header>
+
+    <section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+      <h2>ingredients <i id="ingredients" class="fa fa-cutlery"></i></h2>
+      <ul>
+        <li>1 cup vital wheat gluten</li>
+        <li>1/4 cup nutritional yeast</li>
+        <li>1 teaspoon garlic powder</li>
+        <li>1 teaspoon onion powder</li>
+        <li>1/2 teaspoon paprika</li>
+        <li>1/2 teaspoon salt</li>
+        <li>3/4 cup vegetable broth or water</li>
+        <li>2 tablespoons soy sauce or tamari</li>
+        <li>1 tablespoon olive oil</li>
+      </ul>
+    </section>
+
+    <section onmouseover="preparationHover()" onmouseout="preparationNormal()">
+      <h2>preparation <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+      <ol>
+        <li>In a mixing bowl, combine the vital wheat gluten, nutritional yeast, garlic powder, onion powder, paprika, and salt. Mix well to ensure the ingredients are evenly distributed.</li>
+        <li>In a separate bowl, whisk together the vegetable broth or water, soy sauce or tamari, and olive oil.</li>
+        <li>Pour the liquid mixture into the dry ingredients and stir until a dough forms.</li>
+        <li>Knead the dough for a few minutes until it becomes elastic and firm.</li>
+        <li>Let the dough rest for about 10 minutes to allow the gluten to develop.</li>
+        <li>Meanwhile, prepare a large pot with enough water to submerge the seitan. You can also add vegetable broth or seasonings to the water for additional flavor.</li>
+        <li>Once the dough has rested, shape it into a log or desired shape. You can also tear or cut it into smaller pieces for a different texture.</li>
+        <li>Place the seitan in the pot of simmering water or broth. Make sure the water is not boiling as it can make the seitan tough.</li>
+        <li>Simmer the seitan for about 1 hour, turning occasionally to ensure even cooking. The seitan should double in size.</li>
+        <li>Remove the seitan from the water and let it cool. You can now use it in various recipes, such as stir-fries, sandwiches, stews, or grilled dishes.</li>
+        <li>Enjoy your homemade seitan!</li>
+        Note: The cooking time may vary depending on the size and thickness of the seitan. You can experiment with different seasonings and spices to customize the flavor to your liking.
+      </ol>
+    </section>
+
+    <footer>
+      <p>Copyright João Costa 2023</p>
+    </footer>
+  </div>
+  <script>
+    function ingredientsHover() {
+      document.getElementById("ingredients").style.fontSize = "300%";
+
+    }
+
+    function ingredientsNormal() {
+      document.getElementById("ingredients").style.fontSize = "100%";
+    }
+
+    function preparationHover() {
+      document.getElementById("preparation").style.fontSize = "300%";
+    }
+
+    function preparationNormal() {
+      document.getElementById("preparation").style.fontSize = "100%";
+    }
+  </script>
+</body>
+
+</html>
